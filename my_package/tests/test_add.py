@@ -1,4 +1,4 @@
-from app_ajay import app_ajay
+from app import app
 
 def test_add():
-    assert app_ajay.add(1,1) == 2
+    assert app.add(1,1) == 2
