@@ -22,7 +22,7 @@ jobs:
             pip install pytest pytest-cov
             pip install poetry
       - name: Run Tests
-          run: |
+        run: |
             pytest --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
       - name: Build
         working-directory: my_package
