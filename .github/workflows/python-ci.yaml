@@ -1,6 +1,6 @@
 name: Python CI and Publish
 
-on: [push,workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   PythonVersionSetup:
@@ -22,7 +22,7 @@ jobs:
             pip install pytest pytest-cov
             pip install poetry
             mkdir -p my_package/dist
-            
+
       - name: Run Tests
         run: |
             pytest --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
