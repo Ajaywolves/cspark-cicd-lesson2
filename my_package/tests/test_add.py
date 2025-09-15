@@ -1,4 +1,4 @@
-from app import app
+from appak import appak
 
 def test_add():
-    assert app.add(1,1) == 2
+    assert appak.add(1,1) == 2
