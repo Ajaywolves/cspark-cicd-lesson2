@@ -32,7 +32,7 @@ jobs:
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: builds
+          name: build
           path: my_package/dist/*
 
 
@@ -61,7 +61,7 @@ jobs:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v4
         with:
-          name: builds
+          name: build
           path: my_package/dist/
 
 
